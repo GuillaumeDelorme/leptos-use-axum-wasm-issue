@@ -27,6 +27,7 @@ leptos_axum = { version = "0.6", default-features = false, features = [
 leptos_meta = "0.6"
 leptos_router = "0.6"
 leptos_dom = "0.6"
+leptos-use = "0.13.11"
 log = "0.4"
 once_cell = "1.19"
 serde = { version = "1.0", features = ["derive"] }
@@ -50,6 +51,9 @@ ssr = [
   "leptos_meta/ssr",
   "leptos_router/ssr",
   "leptos_dom/ssr",
+  "leptos-use/ssr",
+  "leptos-use/wasm_ssr",
+  "leptos-use/axum",
   "dep:leptos_axum",
   "dep:worker",
 ]
